@@ -1,0 +1,31 @@
+{
+  "name": "@qasimha/widget",
+  "version": "0.1.0",
+  "description": "Qasimha on-site messaging widget: instalment summary, card snippet and FAQ for merchant product, cart and checkout pages.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/qasimha-widget.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node build.mjs",
+    "pretest": "node build.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.10.0",
+    "esbuild": "^0.28.0",
+    "eslint": "^9.20.0",
+    "happy-dom": "^20.14.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.20.0",
+    "vitest": "^5.0.0"
+  }
+}
